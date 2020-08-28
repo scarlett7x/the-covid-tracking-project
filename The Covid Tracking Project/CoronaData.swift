@@ -48,12 +48,12 @@ class CoronaData: NSObject {
             urlString = "https://api.covidtracking.com/v1/us/daily.json"
         }
         guard let url = URL(string: urlString) else { return }
-        print(urlString)
+//        print(urlString)
         
         URLSession.shared.dataTask(with: url) { (data, response, err) in
             guard let coronaData = data else { return }
             let dataSource = try? JSONDecoder().decode([coronaElement].self, from: coronaData)
-            print(dataSource)
+//            print(dataSource)
             
             self.dateToCases = [Int: Int]()
             for dataEntry in dataSource! {

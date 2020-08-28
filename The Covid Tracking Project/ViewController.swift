@@ -16,7 +16,7 @@ class DateAxisValueFormatter : NSObject, IAxisValueFormatter {
     }
     func stringForValue(_ value: Double, axis: AxisBase?) -> String {
         let i = Int(value)
-        return dates[i]
+        return dates[i % self.dates.count]
     }
 }
 
@@ -162,6 +162,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let data = dataModel.toLineData()
         let datesForDisplay = dataModel.datesForDisplay
         chart.data = data
+//        print(datesForDisplay)
         let format = DateAxisValueFormatter()
         format.take(source: datesForDisplay)
         chart.xAxis.valueFormatter = format

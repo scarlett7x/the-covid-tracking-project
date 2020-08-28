@@ -26,6 +26,8 @@ class DataTypeViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "Data Type"
         self.typeTableView.dataSource = self
         self.typeTableView.delegate = self
         typeTableView.tableFooterView = UIView(frame: .zero)

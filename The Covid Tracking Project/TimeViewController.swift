@@ -109,6 +109,8 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "Start and End Time"
         setDateFormatter()
         createEvents()
         self.timeTableView.delegate = self
@@ -134,7 +136,7 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let yesterday = DateComponents(year: now.year, month: now.month, day: now.day! - 1)
         sender.maximumDate = Calendar.current.date(from: yesterday)!
         sender.minimumDate = dateFormatter.date(from: "2/1/20")!
-        print(sender.alpha)
+//        print(sender.alpha)
         if sender.alpha == CGFloat(2) {
             sender.minimumDate = dateFormatter.date(from: (timeTableView.cellForRow(at: IndexPath.init(row: 0, section: 0))?.detailTextLabel!.text)!)!
         }

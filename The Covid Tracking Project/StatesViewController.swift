@@ -31,6 +31,8 @@ class StatesViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "Regions"
         self.statesTableView.delegate = self
         self.statesTableView.dataSource = self
         statesTableView.tableFooterView = UIView(frame: .zero)
