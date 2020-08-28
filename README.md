@@ -2,9 +2,10 @@
 
 This pandemic makes a difference in our lives in every possible way, and a lot of people have been closely tracking how different regions are doing. I came up with the idea of making an iOS app to track COVID-related data because I somewhat had a hard time navigating through different graphs, links, data through websites. There are so many resources, but I personally care about complete data visualization of new cases and death cases the most. I know a lot of my friends share this concern, so I decided to make this mobile application.
 
-### Disclaimer
+### Credits
 
-In this project, I used data API from covidtracking.com, and shoutout to their amazing group of volunteers that provide the most complete data available about COVID-19 in the U.S. 
+In this project, I used data API from https://covidtracking.com/. Shout out to their amazing group of volunteers that provide the most complete data available about COVID-19 in the U.S.
+The idea of making a line chart for data visualziation comes from iOS Decal Spring 2020 https://iosdev.berkeley.edu/.
 
 ### UI/UX Design
 
