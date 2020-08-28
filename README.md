@@ -6,8 +6,6 @@ This pandemic makes a difference in our lives in every possible way, and a lot o
 
 In this project, I used the data API from https://covidtracking.com/. Shout out to their amazing group of volunteers that provide the most complete data available about COVID-19 in the U.S.
 
-The idea of making a line chart for data visualization comes from iOS Decal Spring 2020 https://iosdev.berkeley.edu/.
-
 ### UI/UX Design
 
 My Figma prototype: https://www.figma.com/file/qOlrazre5GPxB3AqTEE99g/covid19?node-id=3%3A34692
